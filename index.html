@@ -3,267 +3,700 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        
         <style>
-         body { color: #190134 }
-         h1, h2, h3, a { color: #F80059 }
-         a: hover { color: #190134  }
+            body {
+                color: #190134;
+                font-family: 'Roboto', sans-serif;
+            }
 
-         #projects { margin-bottom: 2em}
+            h1, h2, h3, a { color: #F80059 }
 
+            .navbar {
+                background: none !important;
+            }
+        
+            .navbar-brand {
+                font-size: 1.75em;
+            }
+        
+            .navbar a {
+                color: #F80059 !important;
+            }
 
+            .navbar a:hover {
+                text-decoration: underline;
+            }
+
+            #projects { margin-bottom: 2em }
+
+            .project .badge {
+                background-color: rgba(0,0,0,.03);
+                font-weight: 400;
+            }
+
+            .project {
+                width: 100%;
+                margin-bottom: 1em;           
+            }
+
+            h3 {
+                margin-bottom: 1em;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="header clearfix">
-                <nav>
-                    <ul class="nav nav-pills float-right">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#forks">Forks</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://eng.heetch.com">Blog</a>
-                        </li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="/">Heetch</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Repositories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contributions">Contributions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://eng.heetch.com">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
-                <h1>Heetch</h1>
             </div>
 
             <div class="jumbotron" style="margin-top: 20px">
                 Here is a list of open-source projects maintained by Heetch and our contributions to existing projects.
             </div>
 
-            <div class="row" id="projects" >
-                <div class="col-lg-12 ">
-                    <h3>Projects</h3>
-                    <hr/>
+            <div class="row m-auto" id="projects">
+                <h3>Projects</h3>
+
+                
+                <div class="card project">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <a href="https://github.com/heetch/sqalx" target="_blank" title="sqalx">
+                                    <h5 class="card-title text-truncate" style="font-weight: bold; color: #190134; text-transform: lowercase">sqalx</h5>
+                                </a>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8em">2016-10-17</h6>
+                                <p class="card-text">Nested transactions for sqlx</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="d-none d-sm-block" style="text-align: right">
+                                    <div>
+                                        <a href="https://github.com/heetch/sqalx/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 85</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">postgresql</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">sqlx</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">nested-transactions</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">savepoints</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">go</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <a href="https://github.com/heetch/sqalx/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 85</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">postgresql</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">sqlx</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">nested-transactions</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">savepoints</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">go</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    
-                        <h4>heetch/sqalx</h4>
-                        <span class="badge badge-pill badge-light float-right" >2016-10-17</span>
-                        <span class="badge badge-pill badge-light float-right" >⭐ 83</span>
-                        <p>Nested transactions for sqlx</p>
-                    
-                        <h4>heetch/lapjv</h4>
-                        <span class="badge badge-pill badge-light float-right" >2016-09-27</span>
-                        <span class="badge badge-pill badge-light float-right" >⭐ 43</span>
-                        <p>Go implementation of the LAPJV algorithm</p>
-                    
-                        <h4>heetch/Android-country-picker</h4>
-                        <span class="badge badge-pill badge-light float-right" >2015-05-7</span>
-                        <span class="badge badge-pill badge-light float-right" >⭐ 29</span>
-                        <p></p>
-                    
-                        <h4>heetch/docker-rsyslog-logmatic</h4>
-                        <span class="badge badge-pill badge-light float-right" >2016-06-6</span>
-                        <span class="badge badge-pill badge-light float-right" >⭐ 7</span>
-                        <p>Docker container for Logmatic (via rsyslog)</p>
-                    
-                        <h4>heetch/drone-packer</h4>
-                        <span class="badge badge-pill badge-light float-right" >2018-04-18</span>
-                        <span class="badge badge-pill badge-light float-right" >⭐ 0</span>
-                        <p>A Drone plugin for building Packer images</p>
-                    
-                        <h4>heetch/hockeyapp-plugin</h4>
-                        <span class="badge badge-pill badge-light float-right" >2016-08-18</span>
-                        <span class="badge badge-pill badge-light float-right" >⭐ 0</span>
-                        <p>A Gradle plugin for uploading iOS and Android Apps to HockeyApp.</p>
-                    
+                
+                <div class="card project">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <a href="https://github.com/heetch/s3update" target="_blank" title="s3update">
+                                    <h5 class="card-title text-truncate" style="font-weight: bold; color: #190134; text-transform: lowercase">s3update</h5>
+                                </a>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8em">2016-07-5</h6>
+                                <p class="card-text">Enable your Golang applications to self update with S3</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="d-none d-sm-block" style="text-align: right">
+                                    <div>
+                                        <a href="https://github.com/heetch/s3update/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 57</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">s3</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">go</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">team-glue</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <a href="https://github.com/heetch/s3update/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 57</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">s3</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">go</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">team-glue</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-lg-6">
-                    
-                        <h4>heetch/s3update</h4>
-                        <span class="badge badge-pill badge-light float-right" >2016-07-5 </span>
-                        <span class="badge badge-pill badge-light float-right" >⭐ 55</span>
-
-                        <p>Enable your Golang applications to self update with S3</p>
-                    
-                        <h4>heetch/confita</h4>
-                        <span class="badge badge-pill badge-light float-right" >2017-12-21 </span>
-                        <span class="badge badge-pill badge-light float-right" >⭐ 38</span>
-
-                        <p>Load configuration in cascade from multiple backends into a struct</p>
-                    
-                        <h4>heetch/neovim-config</h4>
-                        <span class="badge badge-pill badge-light float-right" >2016-06-7 </span>
-                        <span class="badge badge-pill badge-light float-right" >⭐ 10</span>
-
-                        <p></p>
-                    
-                        <h4>heetch/oss-static</h4>
-                        <span class="badge badge-pill badge-light float-right" >2018-05-3 </span>
-                        <span class="badge badge-pill badge-light float-right" >⭐ 0</span>
-
-                        <p></p>
-                    
-                        <h4>heetch/styleguide</h4>
-                        <span class="badge badge-pill badge-light float-right" >2017-12-19 </span>
-                        <span class="badge badge-pill badge-light float-right" >⭐ 0</span>
-
-                        <p></p>
-                    
+                
+                <div class="card project">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <a href="https://github.com/heetch/lapjv" target="_blank" title="lapjv">
+                                    <h5 class="card-title text-truncate" style="font-weight: bold; color: #190134; text-transform: lowercase">lapjv</h5>
+                                </a>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8em">2016-09-27</h6>
+                                <p class="card-text">Go implementation of the LAPJV algorithm</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="d-none d-sm-block" style="text-align: right">
+                                    <div>
+                                        <a href="https://github.com/heetch/lapjv/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 43</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">go</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">lapjv-algorithm</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">algorithm</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <a href="https://github.com/heetch/lapjv/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 43</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">go</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">lapjv-algorithm</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">algorithm</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="card project">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <a href="https://github.com/heetch/confita" target="_blank" title="confita">
+                                    <h5 class="card-title text-truncate" style="font-weight: bold; color: #190134; text-transform: lowercase">confita</h5>
+                                </a>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8em">2017-12-21</h6>
+                                <p class="card-text">Load configuration in cascade from multiple backends into a struct</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="d-none d-sm-block" style="text-align: right">
+                                    <div>
+                                        <a href="https://github.com/heetch/confita/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 41</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">configuration</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">structure</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">configuration-loader</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">golang</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <a href="https://github.com/heetch/confita/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 41</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">configuration</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">structure</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">configuration-loader</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">golang</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card project">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <a href="https://github.com/heetch/neovim-config" target="_blank" title="neovim-config">
+                                    <h5 class="card-title text-truncate" style="font-weight: bold; color: #190134; text-transform: lowercase">neovim-config</h5>
+                                </a>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8em">2016-06-7</h6>
+                                <p class="card-text"></p>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="d-none d-sm-block" style="text-align: right">
+                                    <div>
+                                        <a href="https://github.com/heetch/neovim-config/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 10</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">neovim</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <a href="https://github.com/heetch/neovim-config/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 10</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">neovim</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
-            <div class="row" id="forks">
-                <div class="col-lg-12 ">
-                    <h3>Forks and Pull-Requests</h3>
-                    <hr/>
-                </div>
+            <div class="row ml-auto mr-auto mt-2" id="contributions">
+                <h3>Contributions</h3>
 
-                <div class="col-lg-6">
-                    
-                        <h4>jmccann/drone-terraform</h4>
-                        <span class="badge badge-pill badge-light float-right" >2018-04-6</span>
-                        <p>Drone plugin for triggering Terraform deployments</p>
-                        <ul>
-                            
-                                <li>
-                                    <span>
-                                        merged
-                                    </span>
-                                    <a href="https://github.com/jmccann/drone-terraform/pull/60">Add .netrc support</a>
-                                </li>
-                            
-                                <li>
-                                    <span>
-                                        closed
-                                    </span>
-                                    <a href="https://github.com/jmccann/drone-terraform/pull/36">Upgrade Terraform to 0.8.8</a>
-                                </li>
-                            
-                        </ul>
-                    
-                        <h4>tony612/grpc-elixir</h4>
-                        <span class="badge badge-pill badge-light float-right" >2017-11-29</span>
-                        <p>The Elixir implementation of gRPC</p>
-                        <ul>
-                            
-                                <li>
-                                    <span>
-                                        opened
-                                    </span>
-                                    <a href="https://github.com/tony612/grpc-elixir/pull/41">Middleware support</a>
-                                </li>
-                            
-                        </ul>
-                    
-                        <h4>bitwalker/docker-erlang</h4>
-                        <span class="badge badge-pill badge-light float-right" >2017-01-27</span>
-                        <p>An alpine image with Erlang installed, intended for releases</p>
-                        <ul>
-                            
-                                <li>
-                                    <span>
-                                        merged
-                                    </span>
-                                    <a href="https://github.com/bitwalker/alpine-erlang/pull/3">Remove --without-common_test flag</a>
-                                </li>
-                            
-                        </ul>
-                    
-                        <h4>goodsign/monday</h4>
-                        <span class="badge badge-pill badge-light float-right" >2016-05-31</span>
-                        <p>Monday is a minimalistic translator for month and day of week names in time.Date objects.</p>
-                        <ul>
-                            
-                                <li>
-                                    <span>
-                                        merged
-                                    </span>
-                                    <a href="https://github.com/goodsign/monday/pull/11">Fix Polish and Bulgarian locales</a>
-                                </li>
-                            
-                        </ul>
-                    
-                        <h4>gorilla/mux</h4>
-                        <span class="badge badge-pill badge-light float-right" >2015-07-31</span>
-                        <p>A powerful URL router and dispatcher for golang.</p>
-                        <ul>
-                            
-                                <li>
-                                    <span>
-                                        closed
-                                    </span>
-                                    <a href="https://github.com/gorilla/mux/pull/114">can be deleted</a>
-                                </li>
-                            
-                        </ul>
-                    
+                
+                <div class="card project">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <a href="https://github.com/heetch/drone-terraform" target="_blank" title="drone-terraform">
+                                    <h5 class="card-title text-truncate" style="font-weight: bold; color: #190134; text-transform: lowercase">jmccann/drone-terraform</h5>
+                                </a>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8em">2018-04-6</h6>
+                                <p class="card-text">Drone plugin for triggering Terraform deployments</p>
+                                <ul>
+                                    
+                                        <li>
+                                            <span>
+                                                merged
+                                            </span>
+                                            <a href="https://github.com/jmccann/drone-terraform/pull/60" target="_blank">Add .netrc support</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <span>
+                                                closed
+                                            </span>
+                                            <a href="https://github.com/jmccann/drone-terraform/pull/36" target="_blank">Upgrade Terraform to 0.8.8</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="d-none d-sm-block" style="text-align: right">
+                                    <div>
+                                        <a href="https://github.com/heetch/drone-terraform/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 30</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <a href="https://github.com/heetch/drone-terraform/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 30</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-lg-6">
-                    
-                        <h4>doomspork/elixir-companies</h4>
-                        <span class="badge badge-pill badge-light float-right" >2017-12-6</span>
-                        <p>A list of companies currently using Elixir in production.</p>
-                        <ul>
-                            
-                                <li>
-                                    <span>
-                                        merged
-                                    </span>
-                                    <a href="https://github.com/doomspork/elixir-companies/pull/246">Add Heetch</a>
-                                </li>
-                            
-                        </ul>
-                    
-                        <h4>bitwalker/docker-elixir</h4>
-                        <span class="badge badge-pill badge-light float-right" >2017-01-27</span>
-                        <p>A Dockerfile based on my alpine-erlang image for Elixir applications</p>
-                        <ul>
-                            
-                                <li>
-                                    <span>
-                                        closed
-                                    </span>
-                                    <a href="https://github.com/bitwalker/alpine-elixir/pull/1">Version 1.4.1</a>
-                                </li>
-                            
-                        </ul>
-                    
-                        <h4>kellydunn/golang-geo</h4>
-                        <span class="badge badge-pill badge-light float-right" >2016-07-26</span>
-                        <p>Geographical calculations in Go.</p>
-                        <ul>
-                            
-                                <li>
-                                    <span>
-                                        merged
-                                    </span>
-                                    <a href="https://github.com/kellydunn/golang-geo/pull/48">Add support for Google Maps API For Work</a>
-                                </li>
-                            
-                                <li>
-                                    <span>
-                                        closed
-                                    </span>
-                                    <a href="https://github.com/kellydunn/golang-geo/pull/45">Add support for Google Maps API For Work params</a>
-                                </li>
-                            
-                        </ul>
-                    
-                        <h4>labstack/echo</h4>
-                        <span class="badge badge-pill badge-light float-right" >2016-02-4</span>
-                        <p>Echo is  a fast :rocket: and unfancy micro web framework for Go.</p>
-                        <ul>
-                            
-                                <li>
-                                    <span>
-                                        merged
-                                    </span>
-                                    <a href="https://github.com/labstack/echo/pull/355">Add a ParamNames method on Context</a>
-                                </li>
-                            
-                        </ul>
-                    
+                
+                <div class="card project">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <a href="https://github.com/heetch/grpc-elixir" target="_blank" title="grpc-elixir">
+                                    <h5 class="card-title text-truncate" style="font-weight: bold; color: #190134; text-transform: lowercase">tony612/grpc-elixir</h5>
+                                </a>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8em">2017-11-29</h6>
+                                <p class="card-text">The Elixir implementation of gRPC</p>
+                                <ul>
+                                    
+                                        <li>
+                                            <span>
+                                                opened
+                                            </span>
+                                            <a href="https://github.com/tony612/grpc-elixir/pull/41" target="_blank">Middleware support</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="d-none d-sm-block" style="text-align: right">
+                                    <div>
+                                        <a href="https://github.com/heetch/grpc-elixir/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 322</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <a href="https://github.com/heetch/grpc-elixir/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 322</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="card project">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <a href="https://github.com/heetch/docker-elixir" target="_blank" title="docker-elixir">
+                                    <h5 class="card-title text-truncate" style="font-weight: bold; color: #190134; text-transform: lowercase">bitwalker/docker-elixir</h5>
+                                </a>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8em">2017-01-27</h6>
+                                <p class="card-text">A Dockerfile based on my alpine-erlang image for Elixir applications</p>
+                                <ul>
+                                    
+                                        <li>
+                                            <span>
+                                                closed
+                                            </span>
+                                            <a href="https://github.com/bitwalker/alpine-elixir/pull/1" target="_blank">Version 1.4.1</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="d-none d-sm-block" style="text-align: right">
+                                    <div>
+                                        <a href="https://github.com/heetch/docker-elixir/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 75</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">docker</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">elixir</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">team-glue</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <a href="https://github.com/heetch/docker-elixir/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 75</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">docker</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">elixir</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">team-glue</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card project">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <a href="https://github.com/heetch/docker-erlang" target="_blank" title="docker-erlang">
+                                    <h5 class="card-title text-truncate" style="font-weight: bold; color: #190134; text-transform: lowercase">bitwalker/docker-erlang</h5>
+                                </a>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8em">2017-01-27</h6>
+                                <p class="card-text">An alpine image with Erlang installed, intended for releases</p>
+                                <ul>
+                                    
+                                        <li>
+                                            <span>
+                                                merged
+                                            </span>
+                                            <a href="https://github.com/bitwalker/alpine-erlang/pull/3" target="_blank">Remove --without-common_test flag</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="d-none d-sm-block" style="text-align: right">
+                                    <div>
+                                        <a href="https://github.com/heetch/docker-erlang/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 36</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">docker</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">erlang</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">team-glue</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <a href="https://github.com/heetch/docker-erlang/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 36</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">docker</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">erlang</span>
+                                            
+                                                <span class="badge" style="word-break: break-all">team-glue</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card project">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <a href="https://github.com/heetch/golang-geo" target="_blank" title="golang-geo">
+                                    <h5 class="card-title text-truncate" style="font-weight: bold; color: #190134; text-transform: lowercase">kellydunn/golang-geo</h5>
+                                </a>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8em">2016-07-26</h6>
+                                <p class="card-text">Geographical calculations in Go.</p>
+                                <ul>
+                                    
+                                        <li>
+                                            <span>
+                                                merged
+                                            </span>
+                                            <a href="https://github.com/kellydunn/golang-geo/pull/48" target="_blank">Add support for Google Maps API For Work</a>
+                                        </li>
+                                    
+                                        <li>
+                                            <span>
+                                                closed
+                                            </span>
+                                            <a href="https://github.com/kellydunn/golang-geo/pull/45" target="_blank">Add support for Google Maps API For Work params</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="d-none d-sm-block" style="text-align: right">
+                                    <div>
+                                        <a href="https://github.com/heetch/golang-geo/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 551</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">go</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <a href="https://github.com/heetch/golang-geo/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 551</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">go</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card project">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <a href="https://github.com/heetch/monday" target="_blank" title="monday">
+                                    <h5 class="card-title text-truncate" style="font-weight: bold; color: #190134; text-transform: lowercase">goodsign/monday</h5>
+                                </a>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8em">2016-05-31</h6>
+                                <p class="card-text">Monday is a minimalistic translator for month and day of week names in time.Date objects.</p>
+                                <ul>
+                                    
+                                        <li>
+                                            <span>
+                                                merged
+                                            </span>
+                                            <a href="https://github.com/goodsign/monday/pull/11" target="_blank">Fix Polish and Bulgarian locales</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="d-none d-sm-block" style="text-align: right">
+                                    <div>
+                                        <a href="https://github.com/heetch/monday/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 38</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <a href="https://github.com/heetch/monday/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 38</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card project">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                <a href="https://github.com/heetch/echo" target="_blank" title="echo">
+                                    <h5 class="card-title text-truncate" style="font-weight: bold; color: #190134; text-transform: lowercase">labstack/echo</h5>
+                                </a>
+                                <h6 class="card-subtitle mb-2 text-muted" style="font-size: 0.8em">2016-02-4</h6>
+                                <p class="card-text">Echo is  a fast :rocket: and unfancy micro web framework for Go.</p>
+                                <ul>
+                                    
+                                        <li>
+                                            <span>
+                                                merged
+                                            </span>
+                                            <a href="https://github.com/labstack/echo/pull/355" target="_blank">Add a ParamNames method on Context</a>
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                <div class="d-none d-sm-block" style="text-align: right">
+                                    <div>
+                                        <a href="https://github.com/heetch/echo/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 10420</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">go</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                                <div class="d-block d-sm-none">
+                                    <div>
+                                        <a href="https://github.com/heetch/echo/stargazers" target="_blank" class="card-link"><i class="far fa-star"></i> 10420</a>
+                                    </div>
+                                    <div>
+                                        
+                                            
+                                                <span class="badge" style="word-break: break-all">go</span>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
             <hr/>
